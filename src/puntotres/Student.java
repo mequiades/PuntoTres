@@ -11,8 +11,31 @@ package puntotres;
  */
 public class Student {
     private String name;
-    Private Grade grades;
+    private Grade grades;
+
+    public Student(String name, Grade grades,) {
+        this.name = name;
+        this.grades = grades;
+        this.grades=new ArrayList<Grade>;
+    }
     
+       
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGrade(Private Grade) {
+        this.Grade = Grade;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Private getGrade() {
+        return Grade;
+    }
     
             
 }
