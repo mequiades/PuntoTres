@@ -1,41 +1,47 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package puntotres;
 
-/**
- *
- * @author aguil_000
- */
+import java.util.ArrayList;
+
+
 public class Student {
     private String name;
-    private Grade grades;
+    private ArrayList<Grade> grades;
+    private ArrayList<Module> takes;
 
-    public Student(String name, Grade grades,) {
+    public Student(String name, ArrayList<Module> takes) {
         this.name = name;
-        this.grades = grades;
-        this.grades=new ArrayList<Grade>;
-    }
-    
-       
-    
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGrade(Private Grade) {
-        this.Grade = Grade;
+        this.takes = takes;
+        this.grades = new ArrayList<>();
     }
 
     public String getName() {
         return name;
     }
 
-    public Private getGrade() {
-        return Grade;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public ArrayList<Grade> getGrades() {
+        return grades;
+    }
+
+    public void setGrades(ArrayList<Grade> grades) {
+        this.grades = grades;
+    }
+
+    public ArrayList<Module> getTakes() {
+        return takes;
+    }
+
+    public void setTakes(ArrayList<Module> takes) {
+        this.takes = takes;
     }
     
+    
+    
+    
+   
             
 }
